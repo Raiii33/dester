@@ -13,6 +13,7 @@ RUN apt-get update -y && \
     apt-get install -y curl && \
     apt-get install -y git && \
     apt-get install -y gnupg
+    apt-get install -y rclone
 RUN curl -sL https://deb.nodesource.com/setup_16.x  | bash -
 RUN apt-get -y install nodejs
 RUN npm install --global yarn
