@@ -1,10 +1,10 @@
 FROM ubuntu:20.04
 
-WORKDIR /usr/src/app
+WORKDIR app/
 
 ENV TZ UTC
 
-RUN chmod 777 /usr/src/app
+RUN chmod 777 app/
 
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends python3.9 && \
